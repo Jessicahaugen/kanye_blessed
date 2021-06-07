@@ -1,6 +1,0 @@
-initialState = {
-    userName:{
-
-    }
-}
-
