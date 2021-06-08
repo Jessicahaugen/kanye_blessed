@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import {getQuotes} from '../Actions/quotesActions'
+import {TwitterShareButton,TwitterIcon} from 'react-share'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+
 
 export default function QuotesPage() {
     const userName = useSelector(state=>state.nameReducer)
@@ -14,9 +17,9 @@ export default function QuotesPage() {
         getQuotes(dispatch, jsonQuote);
     } 
    
-    useEffect( () => {
-       doGetQuotes();
-    }, []);
+    // useEffect( () => {
+    //    doGetQuotes();
+    // }, []);
 
     return (
        
@@ -25,8 +28,14 @@ export default function QuotesPage() {
                 <h1>{userName}</h1>
 
                 <button onClick={()=> doGetQuotes()}></button>
+                <CopyToClipboard>
+                    <button> copy </button>
+                </CopyToClipboard>
                 
                <h1>{quotes.quote}</h1> 
+
+               <TwitterShareButton url={"http://localhost:3000/Inspirations"} title={"Kanspiration"} > <TwitterIcon ></TwitterIcon>
+               </TwitterShareButton>
 
             </div>
         
