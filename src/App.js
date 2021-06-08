@@ -1,7 +1,6 @@
 
 import './App.css';
 import Nav from './Components/Nav';
-import QuotesPage from './Components/QuotesPage';
 
 function App() {
   return (
