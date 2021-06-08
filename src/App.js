@@ -1,13 +1,12 @@
 
 import './App.css';
-import Nav from './Components/Nav';
+import Header from './Components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Kanye Rest</h1>
-      
-      <Nav />
+      <Header />
     
     </div>
   );

@@ -1,9 +1,8 @@
-import { GETQUOTES} from "../ActionTypes/quoteActionTypes";
+import {GETQUOTES} from "../ActionTypes/quoteActionTypes";
 
 const initialState = {
-    quote:'',
-
-}   
+  quote:'',
+}                     
 ;
 
 const quoteReducer = (state = initialState, action) => {
