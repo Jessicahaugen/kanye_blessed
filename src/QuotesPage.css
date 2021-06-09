@@ -1,0 +1,55 @@
+.quotesPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid;
+    border-color: rgb(173,254,229) ;
+    border-width: 8px;
+    
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-top: 2%;
+    background-color:#adb6fe ;
+    /* width: 50%; */
+    transform: skew(-15deg); 
+    box-shadow: rgb(173,254,229);
+    
+    
+}
+
+.user{
+    background-color: black;
+    color: white;
+    margin-left:10px;
+    
+}
+.quoteDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+    margin: 3%;
+    height: 350px;
+    width: 800px;
+
+}
+
+.quoteButton{
+   
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}

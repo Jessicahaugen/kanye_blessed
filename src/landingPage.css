@@ -1,0 +1,75 @@
+.landingPage{
+    display: flex;
+    flex-direction: column;
+    background: rgb(173,254,229);
+    background: linear-gradient(324deg, rgba(173,254,229,1) 50%, rgba(255,255,255,1) 50%);
+    height:100vh;
+    border-top: solid;
+    border-color: #adb6fe;
+  
+}
+.landingContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12%;
+    font-size: xx-large;
+}
+.kanyeBlessed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #adb6fe;
+    width: 65%;
+    
+}
+.title{
+    font-size: 65px;
+}
+.linkNav{
+   color:black;
+   font-size: x-large;
+}
+.linkNav:hover{
+    color:#fec5ad;
+    background-color: black;
+}
+.inputDiv{
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    padding: 40px;
+}
+input{
+    border-color:#fec5ad ;
+    border-style: solid;
+    transform: skew(-15deg); 
+    
+  
+}
+  
+  
+  
+.bouncingKanye{
+  
+    margin-top: 20%;
+    margin-left: 12%;
+    height: 400px;
+    width:40%;
+    background-image: url(pngjoy.com_kanye-west-full-body-kanye-west-head-png_4428229.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    animation:bouncingKanye 1s infinite;
+}
+  
+@keyframes bouncingKanye {
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+

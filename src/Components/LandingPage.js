@@ -15,11 +15,9 @@ export default function LandingPage() {
             <Container className="landingContainer"fluid="xl">
                 <div className="kanyeBlessed">
                        
-                            <h1>Kanye Rest.</h1>
-                            <h1> Kanye Ble$$ed.</h1>
-                            <h1>Kanye Obsessed.</h1>
-                        
-                    
+                            <h1 className="title">Kanye Rest.</h1>
+                            <h1 className="title" > Kanye Ble$$ed.</h1>
+                            <h1 className="title">Kanye Obsessed.</h1>
 
                         <div className="inputDiv">
                              <input onChange={(e) => user(dispatch,e.target.value)} type="text" className="userName" placeholder="DROP UR NAME"></input>

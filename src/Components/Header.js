@@ -4,6 +4,7 @@ import LandingPage from './LandingPage'
 import QuotesPage from './QuotesPage'
 import KanyeOrigins from './KanyeOrigins'
 import Nav from 'react-bootstrap/Nav'
+import Error from './Error'
 
 
 
@@ -35,7 +36,8 @@ export default function Header() {
         <Route  path ="/Inspirations" component={QuotesPage}></Route>
 
         <Route  path ="/KanyeOrigins" component={KanyeOrigins}></Route>
-
+       
+        <Route path="/" component={Error}></Route>
       
         </Switch>
 
