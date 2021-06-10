@@ -1,13 +1,14 @@
 # Kanye Ble$$ed 
-an application using the Kanye west app to bring daily yeezus inspiration.
+Front end application using the Kanye.rest API to bring daily inpiration from Yeezy. Enter your name to generate a awesome nickname. Copy your favorite quote to your clipboard or post to social media of choice. Fully responsive and including breakpoints. 
 
 
-# Componenets
+Tools used: 
 
-Landing page
-quotes page 
-post your inspo to twitter/facebook/instagram 
-copy button to copy quote 
+- React.js
+- Redux
+- CSS Animations
+- External component libraries
+
 
 
 
