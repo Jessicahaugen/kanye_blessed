@@ -31,9 +31,9 @@ export default function QuotesPage() {
             <div className="quotesPage">
 
                 <div className="welcome">
-                    <h1>WHAT UP</h1>
+                    <p>WHAT UP</p>
                     <div className="user">
-                    <h1 className="quote">{userName}</h1>
+                    <h3>{userName}</h3>
                     </div>
                 </div>
                 
@@ -56,7 +56,7 @@ export default function QuotesPage() {
                         
                     </div>
                     <div className="quoteButtonC">
-                        <Button className="bootButtonQ" variant="dark" onClick={()=> getQuotes(dispatch)}>Drop Another Quote</Button>
+                        <Button className="bootButtonQ" variant="dark" onClick={()=> getQuotes(dispatch)}>Drop Another</Button>
                 
                     </div>
                </div>

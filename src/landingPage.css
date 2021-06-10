@@ -3,7 +3,7 @@
     flex-direction: column;
     background: rgb(173,254,229);
     background: linear-gradient(324deg, rgba(173,254,229,1) 50%, rgba(255,255,255,1) 50%);
-    height:100vh;
+    min-height:100vh;
     border-top: solid;
     border-color: #adb6fe;
     border-width: 8px;
@@ -29,6 +29,8 @@
 .title{
     font-size: 65px;
 }
+
+/* NAV */
 .linkNav{
    color:black;
    font-size: x-large;
@@ -37,6 +39,9 @@
     color:#fec5ad;
     background-color: black;
 }
+
+
+
 .inputDiv{
     padding-left: 10px;
     padding-top: 20px;
@@ -78,4 +83,95 @@ input{
       transform: rotate(0deg);
     }
 }
+@media only screen and (max-width: 600px) {
+   .linkNav{
+       
+       font-size: medium;
+       transform: skewx(-15deg);
+       border-color: black;
+       width: 100%;
+    }
+  
+   .title{
+       font-size: 50px;
+    }
+   
+    .kanyeBlessed{
+        width: 100%;
+    }
+   .bouncingKanye{
+       display: none;
+    }
+   .landingPage{
+       justify-content: center;
+       align-items: flex-start;
+       
+    }
+
+   .landingContainer{
+       width: 100%;
+       padding-bottom:225px;
+       font-size: 25px;
+       margin-right: 0;
+       width: 100%;
+    
+    }
+
+    .inputDiv{
+        margin-top:45px;
+        margin-right: 20px;
+    }
+
+
+   input{
+       border-width: 3px;
+    }
+
+    a.button{
+        height: 30px;
+        width: 55px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .bouncingKanye{
+        display: none;
+    }
+    .kanyeBlessed{
+        width: 100%;
+    }
+
+    .landingPage{
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .landingContainer{
+        width: 100%;
+        padding-bottom:225px;
+        font-size: 25px;
+        margin-right: 0;
+        width: 100%;
+     
+    }
+    .inputDiv{
+        margin-top:45px;
+        margin-right: 20px;
+    }
+
+    .title{
+        font-size: 60px;
+     }
+
+}
+
+
+
+
+
+
+
 

@@ -1,0 +1,46 @@
+.errorPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(173,254,229);
+    background: linear-gradient(324deg, rgba(173,254,229,1) 50%, rgba(255,255,255,1) 50%);
+    min-height:100vh;
+    border-top: solid;
+    border-color: #adb6fe;
+    border-width: 8px;
+  
+}
+.direction{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.permission{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color:#fec5ad;
+    transform: skew(-15deg); 
+    width: 80%;
+    margin-top:2%;
+    border-width: 6px;
+    border-style: ridge;
+    border-bottom: none;
+    border-right: none;
+    border-color: black;
+
+}
+
+.step{
+    font-size: xx-large;
+}
+
+.kanlink{
+    text-decoration: none;
+    color:#adb6fe ;
+    font-weight: 80;
+}

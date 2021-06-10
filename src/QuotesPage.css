@@ -18,19 +18,19 @@
     padding: 1%;
     background-color:#adb6fe ;
     transform: skew(-15deg); 
-    box-shadow: rgb(173,254,229);
+    width: 60%;
     margin-top:2%;
     border-width: 6px;
     border-style: ridge;
     border-bottom: none;
     border-right: none;
     border-color: black;
+    font-size: xx-large;
 }
 
 .user{
     background-color: black;
     color: white;
-    margin-left:10px;
     
 }
 .quoteDisplay{
@@ -48,14 +48,14 @@
     border-style: solid;
     margin: 1%;
     padding: 1%;
-    height: 400px;
+    min-height: 400px;
     width: 75%; 
 
 } 
 .quoteDisplay {
 	position: relative;
 	background: white;
-	border-radius: .4em;
+	border-radius: 3px;
 }
 
 .quoteDisplay:after{
@@ -77,15 +77,7 @@
     font-size: 60px;
 
 }
-.name{
-   
-    padding: 10px;
-    position: relative;
-    animation-name: nameAnimation;
-    animation-duration: 4s;
-    font-size: 60px;
 
-}
 @keyframes nameAnimation {
     0%   {left:0px; top:0px;}
     25%  { left:100px; top:0px;}
@@ -103,14 +95,14 @@
     justify-content: space-between;
     margin: 10px;
     width: 75%;
+    margin-left: 100px;
+    margin-top:100px;
     
 }
 .bootButtonQ{
     height: 75px;
     width: 200px;
     transform: skew(-15deg); 
-    
-
 }
 
 
@@ -158,9 +150,7 @@
 .quoteButtonC{
     display:flex;
     flex-direction: row;
-    /* align-items: center; */
     width: 20%;
-
 }
 
 
@@ -192,3 +182,105 @@
     }
 }
 
+
+
+@media only screen and (max-width: 378px) {
+    .welcome{
+        width:80%;
+        height:80px;
+        font-size: x-large;
+    }
+    .user{
+        height:60px;
+    }
+    
+    .quoteDisplay{
+        margin-top: 10px;
+        width:85%;
+        height: unset;
+    }
+
+    .quote{
+        font-size: 35px;
+        padding:30px;
+    
+    }
+
+    .bouncingKanye2{
+       width: 25%;
+       margin-left: 2px;
+
+    }
+    .social{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 100px;
+        width: 70%;
+        margin-top: 100px;
+        margin-left: 40px;
+        
+    } 
+    
+    .twitter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+        margin-right: 50px;
+        
+    }
+    
+    .bootButtonQ{
+        transform: none; 
+       
+    }
+    .quoteButtonC{
+        display:flex;
+        flex-direction: row;
+        width: 28%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .quotesPage{
+        justify-content: center;
+    }
+    .welcome{
+        width: 60%;
+        
+    }
+    .quoteDisplay{
+        margin-top: 10px;
+        width:85%;
+        height: unset;
+    }
+
+    .twitter{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 15%;
+        margin-left: 100px;
+       
+    }
+    .quote{
+        font-size: 40px;
+        padding:40px;
+    
+    }
+    .social{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-left: 45px;
+        width: 80%;
+        margin-bottom: 100px;
+    } 
+    .bootButtonQ{
+        transform: none; 
+        
+
+    }
+}
