@@ -5,7 +5,7 @@ const initialState = ''
 const nameReducer = (state = initialState, action) => {
     switch (action.type) {
       case MAKEUSER:
-        return (state = `${action.payload} eezy`);
+        return (state = ` { ${action.payload} -eezy }`);
       default:
         return state;
     }

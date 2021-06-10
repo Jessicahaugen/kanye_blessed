@@ -33,30 +33,36 @@ export default function QuotesPage() {
                 <div className="welcome">
                     <h1>WHAT UP</h1>
                     <div className="user">
-                    <h1>{userName}</h1>
+                    <h1 className="quote">{userName}</h1>
                     </div>
-                </div>
-                <div className="quoteDisplay">
-                <h1 >{quotes.quote}</h1> 
-                    <div classname="clipIcon">
-                    <CopyToClipboard text={quotes.quote}>
-                        <Button variant="dark" onClick={copyAlert} onCopy={()=>setCopy(true)}> <FaClipboard /> </Button>
-                    </CopyToClipboard>
-                    </div>
-                </div>
-                <div className="quoteButton">
-                <Button variant="dark" onClick={()=> getQuotes(dispatch)}>Drop Another Quote</Button>
                 </div>
                 
-                <div className ="social">
-                    <div className="twitter">
-                        <TwitterShareButton url={"http://localhost:3000/Inspirations"} title={`Kanspiration for your day: ${quotes.quote}`} > <TwitterIcon ></TwitterIcon>
-                        </TwitterShareButton>
+                <div className="quoteDisplay">
+                    <h1 className="quote">{quotes.quote}</h1> 
+                    <div className="clip" >
+                        <CopyToClipboard text={quotes.quote}>
+                            <Button className="clipIcon" variant="dark" onClick={copyAlert} onCopy={()=>setCopy(true)}> <FaClipboard /> </Button>
+                        </CopyToClipboard>
                     </div>
-                    <div>
-                        <FacebookShareButton url={"http://localhost:3000/Inspirations"} title={`Kanspiration for your day: ${quotes.quote}`} ></FacebookShareButton><FacebookIcon></FacebookIcon>
+                </div>
+                <div className ="social">
+                    <div className="bouncingKanye2"></div>
+                    <div className="twitter">
+                        <TwitterShareButton url={"http://localhost:3000/Inspirations"} title={`Kanspiration for your day: ${quotes.quote}`} > <TwitterIcon className="twit"></TwitterIcon>
+                        </TwitterShareButton>
+                    
+                        <FacebookShareButton url={"http://localhost:3000/Inspirations"} title={`Kanspiration for your day: ${quotes.quote}`} ></FacebookShareButton><FacebookIcon  className="fb"></FacebookIcon>
+                        
+                        
+                    </div>
+                    <div className="quoteButtonC">
+                        <Button className="bootButtonQ" variant="dark" onClick={()=> getQuotes(dispatch)}>Drop Another Quote</Button>
+                
                     </div>
                </div>
+               
+                    
+               
             </div>
         
 

@@ -6,6 +6,7 @@
     height:100vh;
     border-top: solid;
     border-color: #adb6fe;
+    border-width: 8px;
   
 }
 .landingContainer{
@@ -37,18 +38,23 @@
     background-color: black;
 }
 .inputDiv{
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
-    padding: 40px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 input{
     border-color:#fec5ad ;
     border-style: solid;
     transform: skew(-15deg); 
-    
+    border-width: 6px;
+   
   
 }
   
+.bootButton{
+    height: 50px;
+    width: 150px;
+}
   
   
 .bouncingKanye{
