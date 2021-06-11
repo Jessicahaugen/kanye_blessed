@@ -11,4 +11,9 @@ Tools used:
 
 
 
+Wireframes: 
 
+
+
+Want to dive deeper into my process? 
+https://j-rhodes.medium.com/kanye-ble-ed-responsive-design-22d4e17f7368

@@ -28,6 +28,7 @@
     border-right: none;
     border-color: black;
     font-size: xx-large;
+    
 }
   
 /* Kanye flip card*/
@@ -43,7 +44,9 @@
     perspective: 1000px;
     border-color: white;
     border-style: solid;
-    border-width: 80px;
+    border-width: 60px;
+    margin-bottom: 100px;
+    
     
 }
 .flipCardInside {
@@ -122,7 +125,7 @@ p{
     }
 
     .flipCardInside{
-        /* height: 300px; */
+        height: 300px;
         width: 300px;
 
     }
@@ -143,9 +146,3 @@ p{
   
 }
 
-@media only screen and (min-width: 768px) {
-    .flipCardInside{
-        width: 500px;
-        
-    }
-}

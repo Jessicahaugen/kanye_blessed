@@ -1,9 +1,9 @@
 import React from 'react'
-import {useSelector} from 'react-redux'
+
 
 
 export default function KanyeOrigins() {
-    const userName = useSelector(state=>state.nameReducer)
+    
     return (
         <div className="originsPage">
             <div className="learn">
